@@ -18,7 +18,7 @@ add_compile_options(-Werror) # make all warning into errors LOL
 add_compile_options(-pedantic)
 add_compile_options(-Ofast)
 
-set(CMAKE_BUILD_TYPE Debug) # Release or Debug
+set(CMAKE_BUILD_TYPE Release) # Release or Debug
 
 # find_package(yaml-cpp REQUIRED) # find package to use their header #sudo apt-get install libyaml-cpp-dev
 
