@@ -12,6 +12,7 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
+<<<<<<< HEAD
   ci:
     runs-on: ubuntu-20.04
     steps:
@@ -19,3 +20,11 @@ jobs:
       - uses: bazelbuild/setup-bazelisk@v1
       - run: bazel build //...
       - run: bazel test //...
+=======
+ci:
+  runs-on: ubuntu-20.04
+  steps:
+    - uses: actions/checkout@v3
+    - uses: bazelbuild/setup-bazelisk@v1
+    - run: bazel build //...
+>>>>>>> 0ee64148062f7f37d068419b97cb5a31eee1bd26
