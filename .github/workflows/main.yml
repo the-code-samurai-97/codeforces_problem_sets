@@ -18,12 +18,14 @@ jobs:
     - uses: bazelbuild/setup-bazelisk@v1
     - run: bazel build //...
     - run: bazel test //...
+jobs:
   runs-on: windows-latest
   steps:
     - uses: actions/checkout@v3
     - uses: bazelbuild/setup-bazelisk@v1
     - run: bazel build //...
     - run: bazel test //...
+jobs:
   runs-on: macos-latest
   steps:
     - uses: actions/checkout@v3
