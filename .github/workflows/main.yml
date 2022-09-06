@@ -31,10 +31,6 @@ jobs:
         mv bazel-5.3.0-linux-x86_64 "${GITHUB_WORKSPACE}/bin/bazel"
         chmod +x "${GITHUB_WORKSPACE}/bin/bazel"
 
-    - name: Test
-      run: |
-        "${GITHUB_WORKSPACE}/bin/bazel" test //...
-
     - name: Build
       run: |
         "${GITHUB_WORKSPACE}/bin/bazel" build //...
