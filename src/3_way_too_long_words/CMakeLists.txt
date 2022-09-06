@@ -24,7 +24,7 @@ set(CMAKE_BUILD_TYPE Release) # Release or Debug
 
 # include_directories(${YAML_INCLUDE_DIRS} ${PROJECT_SOURCE_DIR}) # include other libraries
 
-# add_library(app_lib_const STATIC src/${PROJ_NAME}.cpp) #create a static library default(static)
+# add_library(${PROJECT_NAME}_lib STATIC src/${PROJ_NAME}.cpp) #create a static library default(static)
 #                                                         #SHARED {use less space for other cpp files when using and it acts as reference for other cpp files}  
 #                                                         #STATIC {it copy and paste the library to other code when executing} #COPIED THE CODE WHEN IT IS COMPILED SO NO NEED THE CODE AFTER THAT
 #                                                         #MODULE load at runtime
