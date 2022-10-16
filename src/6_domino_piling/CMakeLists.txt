@@ -1,7 +1,6 @@
-
   
 cmake_minimum_required(VERSION 3.16)
-SET(PROJ_NAME "4_team") #set project name
+SET(PROJ_NAME "6_domino_piling") #set project name
 PROJECT(${PROJ_NAME})
 
 project(${PROJ_NAME})
@@ -23,11 +22,11 @@ find_package(yaml-cpp REQUIRED) # find package to use their header #sudo apt-get
 
 include_directories(${YAML_INCLUDE_DIRS} ${PROJECT_SOURCE_DIR}) # include other libraries
 
-add_library(${PROJ_NAME}_lib STATIC src/main.cpp) #create a static library default(static)
+add_library(${PROJECT_NAME}_lib STATIC src/${PROJ_NAME}.cpp) #create a static library default(static)
                                                         #SHARED {use less space for other cpp files when using and it acts as reference for other cpp files}  
                                                         #STATIC {it copy and paste the library to other code when executing} #COPIED THE CODE WHEN IT IS COMPILED SO NO NEED THE CODE AFTER THAT
                                                         #MODULE load at runtime
-add_executable(${PROJECT_NAME} src/main.cpp) #create a executable
+add_executable(${PROJECT_NAME} src/${PROJ_NAME}.cpp) #create a executable
 target_link_libraries( ${PROJECT_NAME} ${YAML_CPP_LIBRARIES}) #link multiple libraries to the excutable
 
 
